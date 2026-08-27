@@ -7,7 +7,7 @@ Goal: Create a function named rotate_word that accepts a string, and create code
 
 Implementation:
 
-Initially, the way I started thinking about how to solve the problem was, first, how to receive the given word, which I had two thoughts. 
+Initially, the way I started thinking about how to solve the problem was: first, how to receive the given word, which I had two thoughts on. 
 
 A. Create a function that could be used later on, and print the given word later
 
@@ -15,5 +15,14 @@ B. Create a way for the user to input the given word, and create a function that
 
 Solution: Option A
 
-Coding: The initial step in the code was to define a function named rotate_word that takes its corresponding parameters, allowing me to use it later when printing examples. Aftwards, I created a line of code that would return the given word but in parts via "slicing" and "indexing". Initially, the word was sliced at index[1] or the second element, word[1:] which is what allowed for the first letter to be removed, while it was indexed at the end by adding word[0], which was combined by the concept of Concatenation, which is the combining of strings via the syntax, "+", which solved the last problem of removing the space. 
+Coding: The initial step in the code was to define a function named rotate_word that takes its corresponding parameters, allowing me to use it later when printing examples. Aftwards, I created a line of code that would return the given word but in parts via "slicing" and "indexing". Initially, the word was sliced at index[1], or the second element, word[1:], which allowed the first letter to be removed. In contrast, it was indexed at the end by adding word[0], combined via concatenation (the combining of strings via the syntax "+"), which solved the last problem of removing the space. 
 
+2. USERNAME BUILDER PROBLEM
+
+   Goal: Create a function named make_username() that could hold 2 parameters, and do the following: convert all letters to lowercase, remove all spaces from the first name, remove all spaces from the last name, and join the first and last name via a period.
+
+   Implementation:
+
+   I started the code by creating the required function, make_username(), with parameters first_name and last_name, allowing me to use multiple parameters in the function. Afterward, I handled each required step one by one. Firstly, to be able to lowercase all of the letters, I had to attach .lowercase() to the first_name and last_name, followed by adding a .replace(" ", "") which replaces the existing spaces in the given name with no spaces, removing them. This was applied to both the first_name and last_name. Moreover, this was all concatenation, which allowed me to combine both names without spaces and add a period in the middle to create the sense of replacing the space with a period. This was all used in the return section of the function, which allowed me to use it later on the printed samples. 
+
+   
